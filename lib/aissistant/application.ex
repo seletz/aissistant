@@ -17,9 +17,9 @@ defmodule Aissistant.Application do
       # Start Finch
       {Finch, name: Aissistant.Finch},
       # Start the Endpoint (http/https)
-      AissistantWeb.Endpoint
+      AissistantWeb.Endpoint,
       # Start a worker by calling: Aissistant.Worker.start_link(arg)
-      # {Aissistant.Worker, arg}
+      {Aissistant.Chat, %{}}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
